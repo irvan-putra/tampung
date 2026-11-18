@@ -115,3 +115,7 @@ Primary/vendor/project documentation, read 2026-11-18. This is documentation-lev
 - C1. Cloudflare R2 bucket locks: https://developers.cloudflare.com/r2/buckets/bucket-locks/
 - C2. Cloudflare R2 pricing: https://developers.cloudflare.com/r2/pricing/
 - C3. Cloudflare R2 get started, checkout/subscription: https://developers.cloudflare.com/r2/get-started/
+
+## Oracle follow-up
+
+For a no-existing-server option, see [Oracle Always Free suitability](oracle-always-free-backup.md). It has enough hardware for a small rest-server experiment, but idle reclamation and account inactivity make it unsuitable as the only dependable recovery copy. This is research, not a deployment.

@@ -4,7 +4,7 @@ Synthetic Android Google Drive backup-and-restore experiment, with public resear
 
 ## Research
 
-Read [the sourced research](research/data-architecture.md) and the follow-up [gratis append-only backup options](research/gratis-append-only-backups.md):
+Read [the sourced research](research/data-architecture.md) and the follow-up [gratis append-only backup options](research/gratis-append-only-backups.md), plus [Oracle Always Free suitability](research/oracle-always-free-backup.md):
 
 - Google Drive for independent recovery snapshots, append-only by default in the app.
 - Delta Chat for private sync and chat.
