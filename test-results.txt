@@ -1,0 +1,17 @@
+PASS UTF-8 snapshot round trip
+PASS empty snapshot
+PASS corrupt bytes
+PASS truncated bytes
+PASS oversized input
+PASS duplicate IDs
+PASS too many notes
+PASS unsupported schema even with valid checksum
+PASS fake backup clear restore all fields
+PASS retain previous fake remote snapshots
+PASS offline backup leaves local intact
+PASS revoked consent restore leaves local intact
+PASS corrupt restore leaves local intact
+PASS remote verification catches corrupt download
+PASS failed local transaction preserves state
+PASS missing remote snapshot leaves local intact
+16 tests passed. Fake transport only. No Android or Google account used.
