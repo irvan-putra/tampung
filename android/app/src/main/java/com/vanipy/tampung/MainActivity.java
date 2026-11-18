@@ -90,7 +90,7 @@ public final class MainActivity extends Activity {
     private void refresh(){try{StringBuilder b=new StringBuilder("LOCAL DUMMY NOTES\n");List<SnapshotCodec.Note> list=local.read();for(SnapshotCodec.Note n:list)b.append(n.id).append(": ").append(n.text).append("\n");if(list.isEmpty())b.append("Empty");notes.setText(b.toString());}catch(Exception e){notes.setText("Local snapshot could not be read; nothing overwritten.");}}
     private void setBusy(boolean value){busy=value;for(Button b:controls)b.setEnabled(!value&&(!"cloud".equals(b.getTag())||BuildConfig.DRIVE_CONFIGURED));}
     private void status(String message){state.setText(message);}
-    private TextView label(String text,int size,boolean bold){TextView v=new TextView(this);v.setText(text);v.setTextSize(size);v.setTextColor(Color.rgb(25,47,42));if(bold)v.setTypeface(null,1);v.setPadding(0,dp(10),0,dp(8));content.addView(v);return v;}
+    private TextView label(String text,int size,boolean bold){TextView v=new TextView(this);v.setText(text);v.setTextSize(size);v.setTextColor(Color.rgb(25,47,42));if(bold)v.setTypeface(null,android.graphics.Typeface.BOLD);v.setPadding(0,dp(10),0,dp(8));content.addView(v);return v;}
     private Button button(String text,Runnable click){Button b=new Button(this);b.setText(text);b.setAllCaps(false);b.setMinHeight(dp(52));content.addView(b,new LinearLayout.LayoutParams(-1,-2));controls.add(b);b.setOnClickListener(v->click.run());return b;}
     private int dp(int value){return (int)(value*getResources().getDisplayMetrics().density+0.5f);}
     @Override protected void onDestroy(){super.onDestroy();worker.shutdown();}
