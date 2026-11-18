@@ -1,3 +1,5 @@
+package com.vanipy.tampung.core;
+
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.util.List;

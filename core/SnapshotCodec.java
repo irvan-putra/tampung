@@ -1,3 +1,5 @@
+package com.vanipy.tampung.core;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

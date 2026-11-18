@@ -1,6 +1,6 @@
 # Drive backup probe: package-neutral preparation
 
-Status: local Java core only. No Android app, APK, repository, OAuth registration or real Google round-trip exists yet.
+Status: local Java core only. Android shell source is being qualified. No release APK, OAuth registration or real Google round-trip exists yet.
 
 ## Checks completed
 
@@ -35,4 +35,4 @@ Run `java RunTests.java /path/to/drive-backup-probe` with JDK 11+. Sources are c
 
 ## Awaited decisions
 
-Chosen project name. Suggested `tampung`; not selected yet. No repository created.
+Name selected: `tampung`. Public repository and sourced research now exist. Developer Google OAuth registration and real-device qualification remain pending.
