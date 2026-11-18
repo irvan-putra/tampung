@@ -69,7 +69,7 @@ public final class MainActivity extends Activity {
     }
     private void useToken(AuthorizationResult authorization){
         String token=authorization.getAccessToken();String action=pendingAction;pendingAction=null;
-        if(token==null||!authorization.getGrantedScopes().contains(new Scope(DriveRemote.SCOPE))){finishError();return;}
+        if(token==null||!authorization.getGrantedScopes().contains(DriveRemote.SCOPE)){finishError();return;}
         DriveRemote remote=new DriveRemote(token);
         setBusy(false);
         if("backup".equals(action))run(()->{new BackupEngine(remote,local).backup();return "GOOGLE snapshot uploaded and byte-verified. Earlier snapshots retained. Clear and restore is a separate test.";});

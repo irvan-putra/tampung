@@ -15,6 +15,8 @@ def tap(label):
             x1,y1,x2,y2=map(int,re.findall(r'\d+',n.get('bounds')))
             if y2>y1 and x2>x1:
                 adb('shell','input','tap',str((x1+x2)//2),str((y1+y2)//2));return
+        if n is None:
+            adb('shell','input','swipe','500','1500','500','700','300')
         time.sleep(.4)
     raise AssertionError('Missing enabled control: '+label)
 def screenshot(name):
