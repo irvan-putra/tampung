@@ -107,6 +107,10 @@ Next: developer-side Google setup and real on-device approval. A live test needs
 
 Real cloud test acceptance: new snapshot created, downloaded bytes match, local dummy data is cleared only after user action, selected snapshot restores every field, existing snapshots remain, no other Drive files are accessible, and cancellation/offline/revoked consent/corruption preserve local state. Record exact source/build and evidence without credentials or personal data. A reinstall/second-device recovery test is a separate qualification stage.
 
+## Follow-up: gratis append-only options
+
+See [the comparison of rest-server, B2 Object Lock, Borg and R2](gratis-append-only-backups.md). It separates free software/owned storage from free hosted allowances and writer-only protection from storage-account/admin compromise. No backend replacement or account setup is part of that research.
+
 ## Sources
 
 All links below were read during this research. Official documentation is primary evidence for API behavior, not a claim that this prototype has executed those APIs. Missing or changing provider policy requires a fresh check before production.
