@@ -7,7 +7,7 @@ def dump():
     return ET.fromstring(adb('shell','cat','/sdcard/window.xml'))
 def node(label):
     root=dump()
-    return next((n for n in root.iter('node') if n.get('text')==label),None)
+    return next((n for n in root.iter('node') if n.get('text','').casefold()==label.casefold()),None)
 def tap(label):
     for _ in range(12):
         n=node(label)
@@ -18,6 +18,7 @@ def tap(label):
         if n is None:
             adb('shell','input','swipe','500','1500','500','700','300')
         time.sleep(.4)
+    screenshot('failure-'+re.sub('[^a-z]+','-',label.lower()))
     raise AssertionError('Missing enabled control: '+label)
 def screenshot(name):
     out.joinpath(name+'.png').write_bytes(adb('exec-out','screencap','-p'))
