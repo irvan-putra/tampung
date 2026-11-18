@@ -17,7 +17,7 @@ Read [the sourced research](research/data-architecture.md):
 - Java snapshot codec and backup engine: **16 passing host tests** with synthetic data and an in-memory fake remote.
 - Separate Android source: `com.vanipy.tampung`, version 0.1.0, lowercase launcher, purpose icon and numeric badge. Local AtomicFile store, explicit snapshot/clear/restore steps, and an official AuthorizationClient/Drive REST adapter.
 - Google operations are **disabled at build time** (`DRIVE_CONFIGURED=false`). They must remain disabled until developer OAuth setup and install-certificate registration are complete. Tokens stay in memory and there is no delete/update endpoint in the adapter. This does not restrict what a compromised authorized credential could do through Google's API.
-- Android build, lint and emulator smoke are under qualification, not a phone or Google backup claim. There is no published APK release.
+- Android debug build, lint and API 35 Pixel 2 emulator local smoke passed for [070b57b](https://github.com/irvan-putra/tampung/commit/070b57b4232828006a366e6a08de6c54fb873d33): [qualification run](https://github.com/irvan-putra/tampung/actions/runs/44307668287). The UI test generated dummy notes, created a local snapshot, cleared the local notes, restored both exact fields and verified both Google controls disabled. Emulator screenshots were inspected for readable initial, restored and disabled-Google states. This is not a phone or Google backup claim. There is no published APK release.
 
 **No OAuth project, genuine Google upload/restore, account selection, reinstall recovery, Android-device test or production security review has been verified. No accounts, paid services or billing have been connected.**
 

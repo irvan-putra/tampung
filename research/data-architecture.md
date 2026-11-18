@@ -101,7 +101,9 @@ Proposed public publication boundary:
 
 Completed: 16 host-Java synthetic codec/engine tests using a fake remote and fake atomic local store. These establish only that tested local logic works under the simulated conditions. They do not establish Android storage atomicity, OAuth, cloud upload/download, device reinstall recovery or security against an active attacker.
 
-Next: separate Android app `com.vanipy.tampung`, explicit synthetic/local versus real-cloud status, Android build/lint/unit tests, actual UI/emulator checks, then developer-side Google setup and real on-device approval. A live test needs a stable install certificate registered with OAuth, Drive API enabled and a test account/audience configuration. No signing/release authority is inferred from choosing the name or publishing research.
+Android qualification update: `com.vanipy.tampung` debug compilation, lint and API 35 Pixel 2 emulator local generate/snapshot/clear/restore smoke passed at source 070b57b4232828006a366e6a08de6c54fb873d33. Both dummy fields were checked after restore and Google buttons verified disabled. The initial/restored/cloud-disabled screenshots were inspected. Workflow: https://github.com/irvan-putra/tampung/actions/runs/44307668287 . There are 16 host core tests; the Gradle unit-test task had no separate Android unit-test sources. This is not a real Google or physical-phone result.
+
+Next: developer-side Google setup and real on-device approval. A live test needs a stable install certificate registered with OAuth, Drive API enabled and a test account/audience configuration. No signing/release authority is inferred from choosing the name or publishing research.
 
 Real cloud test acceptance: new snapshot created, downloaded bytes match, local dummy data is cleared only after user action, selected snapshot restores every field, existing snapshots remain, no other Drive files are accessible, and cancellation/offline/revoked consent/corruption preserve local state. Record exact source/build and evidence without credentials or personal data. A reinstall/second-device recovery test is a separate qualification stage.
 

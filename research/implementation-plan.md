@@ -1,6 +1,6 @@
 # Drive backup probe: package-neutral preparation
 
-Status: local Java core only. Android shell source is being qualified. No release APK, OAuth registration or real Google round-trip exists yet.
+Status: local Java core only. Android shell debug build/lint and API35 emulator local smoke passed; see the main README for the source and workflow. No release APK, OAuth registration or real Google round-trip exists yet.
 
 ## Checks completed
 
