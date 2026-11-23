@@ -24,7 +24,7 @@ on 2026-11-18 (the irvan and tuju key backups) and never since.
 
 **Why did only irvan and tuju land in the repo?**
 Timing, not a decision. Every key created on 2026-11-17 (kemas, sapa, jin,
-onda, fae, bidik, denyut, saku, tumbuh) had its encrypted backup delivered as
+onda, unggah, bidik, denyut, saku, tumbuh) had its encrypted backup delivered as
 a WhatsApp attachment, each restore-checked before sending. The private repo
 was created on 2026-11-18 and received only that day's two new keys. The
 backup strategy changed mid-stream; nothing about irvan or tuju is special.
