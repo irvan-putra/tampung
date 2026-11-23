@@ -84,7 +84,8 @@ elsewhere, needing a human to touch it.
    reassemble, decrypt with the vault recovery password. No GitHub, no
    accounts, no internet.
 
-**The QR-sheet idea is PARKED. Revisit early 2027, at Irvan's decision.**
+**The QR-sheet idea is Irvan's preferred final tier of the options
+discussed. It is PARKED: revisit early 2027, at his decision.**
 
 ## Decisions taken 2026-11-23
 
