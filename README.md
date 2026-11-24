@@ -46,3 +46,7 @@ Publishing to AT Protocol and private Delta Chat sync are research only, not imp
 ## License
 
 AGPL-3.0-or-later for this project's original code. See [LICENSE](LICENSE). External libraries retain their own licenses.
+
+---
+
+Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.
